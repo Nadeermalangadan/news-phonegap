@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="app" loading-container="loading">
+<header class="bar bar-nav">
+    <a ng-show="showBack" class="btn btn-link btn-nav pull-left" href="#/" data-transition="slide-out">
+        <span class="icon icon-left-nav"></span>
+        Назад
+    </a>
+    <a class="icon icon-refresh pull-right" href="#settingsModal"></a>
+
+    <span class="logo"></span>
+</header>
+
+<div class="content" ng-view></div>
+<!-- /.content -->
+
+<!-- Settings modal -->
+<div id="settingsModal" class="modal">
+    <header class="bar bar-nav">
+        <a class="icon icon-close pull-right" href="#settingsModal"></a>
+
+        <h1 class="title">Settings</h1>
+    </header>
+
+    <div class="content">
+        <form class="input-group">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Username">
+        </form>
+
+        <h5 class="content-padded">App settings</h5>
+
+        <ul class="table-view">
+            <li class="table-view-cell media">
+                <span class="media-object pull-left icon icon-sound"></span>
+
+                <div class="media-body">
+                    Enable sounds
+                </div>
+                <div class="toggle">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+                <span class="media-object pull-left icon icon-person"></span>
+
+                <div class="media-body">
+                    Parental controls
+                </div>
+                <div class="toggle">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>
+        </ul>
+        <div class="content-padded">
+            <button class="btn btn-positive btn-block">Save settings</button>
+        </div>
+    </div>
+</div>
+<!-- /.modal -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/ratchet.min.js"></script>
+<script src="js/elastic.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/elastic-angular-client.min.js"></script>
+<script src="js/bz-model.js"></script>
+<script src="js/NewsItemModel.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

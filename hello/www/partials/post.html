@@ -1,0 +1,33 @@
+<div class="slider">
+    <div class="slide-group">
+        <div class="slide">
+            <img src="{{item.getMainImage('medium')}}" />
+
+            <div class="slide-text">
+                <h1>{{item.title}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-padded">
+
+    <div ng-bind-html="item.getBody()"></div>
+
+</div>
+
+
+<nav class="bar bar-tab">
+    <a class="tab-item tab-vinnitsa" href="" ng-click="loadNews(3)" ng-class="{'active': region == 3}">
+        <span class="icon icons icons-vinnitsa"></span>
+        <span class="tab-label">Новини Вінниці</span>
+    </a>
+    <a class="tab-item tab-ukraine" href="" ng-click="loadNews(2)" ng-class="{'active': region == 2}">
+        <span class="icon icons icons-ukraine"></span>
+        <span class="tab-label">Новини України</span>
+    </a>
+    <a class="tab-item tab-world" href="" ng-click="loadNews(1)" ng-class="{'active': region == 1}">
+        <span class="icon icons icons-world"></span>
+        <span class="tab-label">Новини світу</span>
+    </a>
+</nav>

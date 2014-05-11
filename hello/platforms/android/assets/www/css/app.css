@@ -1,0 +1,145 @@
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    .icons {
+        background-size: 96px 144px;
+    }
+    .logo {
+        background-size: 200px 24px;
+    }
+}
+.bar-nav~.content {
+    padding: 44px 0;
+}
+
+.slider {
+  margin-bottom: 0;
+  max-height: 200px;
+  position: relative;
+}
+.slider img {
+  width: 100%;
+}
+.content-padded {
+  margin: 15px;
+}
+.slider .slide-group {
+    position: initial;
+}
+.slider .slide-text {
+  background: rgba(255,255,255,.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+.slider .slide-text h1 {
+    font-size: 100%;
+    margin: 0;
+    white-space: normal;
+}
+
+.table-view {
+    margin: -1px 0 5px !important;
+}
+
+.logo {
+    background: url('../img/logo.png');
+    display: block;
+    width: 100px;
+    height: 12px;
+    background-size: 100px 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -6px;
+}
+
+.icons {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    background-image: url('../img/icons.png');
+    background-size: 48px 72px;
+}
+/* Новини Вінниці */
+.icons-vinnitsa {
+    background-position: -24px -48px;
+}
+.active .icons-vinnitsa, .tab-item:active .icons-vinnitsa {
+    background-position: 0 -48px;
+}
+.bar-tab .tab-item.tab-vinnitsa.active,
+.bar-tab .tab-item.tab-vinnitsa:active {
+    color: #c91c12;
+}
+/* Новини України */
+
+.icons-ukraine {
+    background-position: -24px -24px;
+}
+.active .icons-ukraine, .tab-item:active .icons-ukraine {
+    background-position: 0 -24px;
+}
+/* Новини світу */
+
+.icons-world {
+    background-position: -24px 0;
+}
+.active .icons-world, .tab-item:active .icons-world {
+    background-position: 0 0;
+}
+
+.table-view-cell.top {
+    background: #fefadf;
+    font-weight: 700;
+}
+.table-view-cell .time {
+    color: #3d80b1;
+}
+.table-view-cell.top .time {
+    color: #f60;
+}
+
+.loading-container {
+   /* position: relative;*/
+}
+.loading-container .loading:before, .loading-container .loading:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 50px;
+    min-width: 50px;
+}
+.loading-container .loading:before {
+    background-color: white;
+    opacity: 0.5;
+}
+.loading-container .loading:after {
+    background-image: url('../img/preloader.gif');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.content-padded h1,
+ .content-padded h2,
+ .content-padded h3,
+ .content-padded h4,
+ .content-padded h5,
+ .content-padded h6{
+    font-size: 100%;
+}
+.content-padded p {
+color: #000;
+}
